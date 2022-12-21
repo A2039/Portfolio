@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Lora:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Lora:ital,wght@1,500&family=Source+Code+Pro:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.Sidebar {
+  /* position: absolute;   it use for over sideber absolute in on location it is not move with display size  */
+  position: absolute;
+  background-color: rgb(75, 106, 107);
+  /* width: 350px; */
+  /* font-family: "Crimson Text", serif; */
+  /* font-family: "Lora", serif; */
+  transition: transform 0.3s ease-in;
+}
+.Sidebar nav {
+  padding: 45px;
+  height: 100vh;
+}
+
+.Sidebar nav li {
+  list-style: none;
+  font-size: 30px;
+  padding: 33px;
+}
+
+.Sidebar nav li a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+
+  .Sidebar nav li a:hover{
+    color: rgb(75, 106, 107);
+    background-color: black;
+  }
+
+
+
+.main {
+  /* background-color: rgb(168, 168, 160); */
+  width: 80vw;
+}
+
+.container {
+  display: flex;
+}
+
+.infoContainer {
+  /* background-color: rgb(253, 253, 253); */
+  height: 70vh;
+  width: 70vw;
+  margin: 144px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.devinfo {
+  font-size: 16px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Crimson Text", serif;
+  font-family: "Lora", serif;
+  /* font-family: "Source Code Pro", monospace; */
+}
+
+.hello {
+  font-size: 3em;
+}
+.name {
+  font-size: 50px;
+  font-weight: bold;
+
+  /* font-family: "Crimson Text", serif; */
+  font-family: "Lora", serif;
+}
+
+.about {
+  font-size: 40px;
+}
+
+.moreabout{
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.buttons{
+    /* margin-top: 40px */
+    margin-top: 2.2em;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: rgb(75, 106, 107);
+    font-weight: bold;
+    /* font-size: 30px; */
+    font-size: 2em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+.btn-sm{
+  font-size: 25px;
+
+}
+
+.btn:hover{
+    color: rgb(75, 106, 107);
+    background-color: white;
+
+}
+
+.devpic img {
+  height: 70vh;
+}
+
+.intro{
+  
+  margin: 80px 50px;
+}
+
+.contactform{
+    padding: 35px;
+    /* padding-top: 150px; */
+    /* font-family: "Crimson Text", serif; */
+    font-family: "Lora", serif;
+    margin: 0 100px;
+}
+
+
+.contactform h1{
+    font-family: "Source Code Pro", monospace;
+    /* text-align: center; */
+    /* padding: 12px 0; */
+}
+
+.contactform form div{
+    padding: 10px;
+}
+
+.contactform form div input{
+    /* width: 26vw; */
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+.contactform form{
+    margin: 30px 30px;
+}
+
+.blogContainer{
+  margin: 0 70px;
+  margin-top: 50px;
+}
+
+#emailHelp{
+    font-size: 15px;
+    color: midnightblue;
+    margin: 0 5px;
+    margin-top: -20px;
+    margin-left: 0px;
+}
+
+
+#formchack {
+  flex-direction: row;
+}
+
+#formchack input{
+  width: 24px;
+  margin-left: 3px 0;
+}
+
+.blogitem{
+  margin: 20px;
+  font-family: "Lora", serif;
+
+}
+
+h1{
+  font-family: "Lora", serif;
+
+}
+
+p{
+  font-family: "Source Code Pro", monospace;
+}
+
+.intro h2{
+  font-family: "Lora", serif;
+  margin: 12px;
+}
+
+.intro p{
+  font-family: "Source Code Pro", monospace;
+  margin: 12px;
+}
+
+.skillcontainer{
+  padding: 15px;
+}
+
+.skillitem{
+  display: flex;
+  margin: 12px;
+}
+
+.skill{
+  width: 265px;
+  height: 6px;
+  background-color: rgb(198, 218, 236);
+  border: 2px solid black;
+}
+
+.s100{
+  width: 200px;
+  background-color: rgb(2, 85, 2);
+}
+.s75{
+  width: 150px;
+  background-color: rgb(4, 155, 4);
+}
+.s50{
+  width: 100px;
+  background-color: rgb(105, 201, 8);
+}
+.s25{
+  width: 50px;
+  background-color: rgb(154, 214, 12);
+}
+
+/* this is use for remove the sidebar from web. */
+.SidebarGo{
+  transform: translate(-443px, 0px);
+  position: absolute;
+}
+
+.ham{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.cross{
+  margin-left: 220px;
+}
+
+.hamburger{
+  /* color: rgb(75, 106, 107); */
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  left: 10px; 
+}
+
+/* when the size of our webpage is going on decrement less than 990 than the .Sidebar gone left */
+@media (max-width: 990px){
+
+  .devpic{
+    display: none;
+  }
+
+  .intro, .blogContainer, .contactform{
+    margin: 50px 8px;
+  }
+  .infoContainer{
+    margin-top: 369px;
+    margin-left: 60px;
+  }
+
+  .buttons{
+    font-size: 5px;
+  }
+/* *{
+  background-color: rgb(222, 191, 191);
+}
+.Sidebar{
+  transform: translate(-443px, 0px);
+  position: absolute;
+} */
+}
+
+
+
+
